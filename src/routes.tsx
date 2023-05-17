@@ -20,6 +20,13 @@ import { IRoute } from 'types/navigation'
 
 const routes: IRoute[] = [
   {
+    name: 'List Perbaikan',
+    layout: '/admin',
+    path: '/data-repaired',
+    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+    component: MainDashboard
+  },
+  {
     name: 'Main Dashboard',
     layout: '/admin',
     path: '/default',
@@ -68,7 +75,8 @@ const routes: IRoute[] = [
     path: '/rtl-default',
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: RTL
-  }
+  },
+  
 ]
 
 export default routes
